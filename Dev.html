@@ -1,6 +1,6 @@
 <html>
-<head>
-		<title>Developpeurs</title>
+	<head>
+		<title>Meteor's Last Whisper</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -8,12 +8,157 @@
 		<link rel="stylesheet" href="style.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+</style>
+
+        
+        
 	</head>
 	<body background = "http://hdwallpaperdaily.com/wp-content/uploads/2014/04/3-d-cube-constellation-wallpaper-1680x1050.jpg">
-    		<nav class="navbar navbar-inverse bg-primary navbar-fixed-top navbar-white ">
-		  	<div class="container-fluid2">
-		    		<div class="navbar-header">
-		      			<a class="navbar-brand" href="index.html">
+		
+        <nav class="navbar navbar-inverse bg-primary navbar-fixed-top navbar-white ">
+		  <div class="container-fluid2 ">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="index.html">
 						<h9 font-family = "Cormorant Unicas">
 							<img src="img/logo_Team_site_inter.png" alt="Logo" style="width: 100px;"/>  
 						</h9> 
@@ -21,119 +166,176 @@
 		    		</div>
 		    		<ul class="nav navbar-nav navbar-left">
 					<li><a href="index.html"><h4>Meteor's Last Whisper</h4></a></li>
-			    		<li><a href="Jeu.html"><h4>Description du jeu</h4></a></li>
+					<li><a href="Jeu.html"><h4>Description du jeu</h4></a></li>
 					<li><a href="Dev.html"><h4>Les developpeurs</h4></a></li>
 					<li><a href="Docs.html"><h4>Documents</h4></a></li>
                     
           
-		    		</ul>
-            			<ul class="nav navbar-nav navbar-right"><button class="btn btn-danger navbar-btn">SMD</button></ul>
-		  	</div>
+		    </ul>
+            
+		  </div>
 		</nav>
-    
-    	<br/>
-	<BR>
-	<br/>
-	<BR>
-	
-     <div class="container-fluid bg-3 text-center"><font color="white">
-	     <h2>Présentation des membres</h2>
-	     <div class="row">
-		     <div class="col-sm-3">
-			    <p class="text-center"><strong><h3>Etienne Sharpin</h3></strong>
-			    </p>
-			    <br>
-			    <a href="#demo" data-toggle="collapse">
-			    	<img src="https://photos.cri.epita.net/etienne.sharpin" style="width: 400px" class="img-circle" alt="Random Name">
-			    </a>
-			    <div id="demo" class="collapse">
-				    <p> Je viens d’une terminale S-SVT avec spécialité ISN. Cette spécialité
-					m’a permis d’apprendre le Python et notamment de développer mon propre
-					jeu en utilisant le module PyGame. Le jeu intitulé Lost Woods était un labyrinthe
-					dont la sortie était indiquée par une certaine combinaison de sons
-					joués par une flûte au centre du labyrinthe. Ces mêmes sons étant écoutables
-					à proximité de stèles magiques disposées à chaque intersection du labyrinthe.
-					Cette année d’ISN m’a également permis de prendre en main plusieurs
-					logiciels tels qu’Audacity ainsi que développer un certain nombre de compétences 
-					notamment en matière d’HTML, PHP et CSS.
-					C’est en allant à une journée portes ouvertes de l’EPITA que j’ai été
-					convaincu par la bonne ambiance de cette école répondant à mon fervent
-					intérêt envers l’informatique.
-				    </p>
-			    </div>
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+		<div class="row">
+ 			 <div class="col-sm-6">
+				  <div class="panel panel-default"width="300" length="300">
+  					<div class="panel-body text-center">
+						<h3>Personnalisez votre héros</h3>
+						<br/>
+						<img src="http://www.eclypsia.com/content/Destiny%202/pistolero_refonte.jpg" alt-"logo" width="500" length="500">
+		  			</div>
+	  			</div>
 			</div>
-			<div class="col-sm-3">
-				<p class="text-center"><strong><h3>Raphael Bourgueil</h3></strong>
-				</p>
-				<br>
-			    	<a href="#demo2" data-toggle="collapse">
-			      		<img src="https://photos.cri.epita.net/raphael.bourgueil" style="width: 400px" class="img-circle" alt="Random Name">
-			    	</a>
-				<div id="demo2" class="collapse">
-			      		<p>Je viens de terminale S-SVT spécialité
-						ISN. J’ai découvert la programmation au lycée et depuis ce moment je m’y
-						suis intéressé. La spécialité ISN m’a permis d’approcher ce milieu si vaste.
-						C’est donc durant ces cours que j’ai pu coder une bataille navale sous python.
-						Cela m’a donné envie d’orienter mes études vers les jeux vidéos et la
-						programmation en intégrant l’EPITA.</p>
-			    	</div>
-			 </div>
-			 <div class="col-sm-3">
-			    	<p class="text-center"><strong><h3>Théo Perinet</h3></strong>
-				</p>
-				<br>
-			   	<a href="#demo3" data-toggle="collapse">
-			      		<img src="https://photos.cri.epita.net/theo.perinet" style="width: 400px" class="img-circle" alt="Random Name">
-			    	</a>
-			    	<div id="demo3" class="collapse">
-			      	<p>Je viens d’une classe de terminale S-SVT spécialité Maths. J’adore les
-					mathématiques et tout ce qui touche à l’informatique. J’ai ainsi découvert
-					l’EPITA en classe de première en cherchant une voie qui me correspond,
-					cependant c’est en échangeant avec des étudiants lors d’une journée de l’étudiant
-					que j’ai eu envie de faire cette école. Un d’eux est même devenu mon
-					parrain ! Sinon à part l’informatique, j’aime principalement le tennis de table,
-					la musique et faire des slides pour des présentations afin qu’elles soient les
-					plus belles et compréhensibles possible.
-					Ma citation préférée : "La chance est une compétence." (Philippe Gabilliet)/p>
-			    	</div>
+  
+  
+
+ 			 <div class="col-sm-6">
+	  			<div class="panel panel-default"width="300" length="300">
+  					<div class="panel-body text-center">
+						<h3>Graphismes surprenants</h3>
+						<br/>
+						<img src="http://4wearegamers.com/wp-content/uploads/2017/06/06012017_header_frontpage-1068x601.jpg" alt-"logo" width="500" length="500">
+		  			</div>
+	  			</div>
 			</div>
-			<div class="col-sm-3">
-				<p class="text-center"><strong><h3>Samory Diaby</h3></strong>
-				</p>
-				<br>
-				<a href="#demo4" data-toggle="collapse">
-					<img src="https://photos.cri.epita.net/samory.diaby" style="width: 400px" class="img-circle" alt="Random Name">
-				</a>
-				<div class="collapse" id="demo4">
-					<p>Je viens d’une classe de terminale S option S.I, que j’ai effectué à l’institution
-						Notre-Dame de Sannois, ville dans laquelle j’habite. Je suis passionné
-						de nouvelles technologies, raison pour laquelle j’ai choisi d’intégrer l’EPITA.
-						Je m’intéresse beaucoup au domaine de la robotique que j’apprécie particulièrement,
-						et qui m’a poussé à construire quelques montages et petits robots
-						à l’aide de la plate-forme arduino. Je pratique également différentes activités
-						sportives comme le tennis ou le basket-ball, car selon moi il est important de
-						toujours pratiquer une activité physique.
-					</p>
+ 		 </div>
+		<div class="row">
+  			<div class="col-sm-6">
+				<div class="panel panel-default"width="300" length="300">
+  					<div class="panel-body text-center">
+						<h3>Duels intenses et immérsifs</h3>
+						<br/>
+						<img src="http://media.comicbook.com/2017/05/destiny-2-gameplay-997250-1280x0.jpg" alt-"logo" width="500" length="500">
+					</div>
+				</div>
+			</div>
+  
+  			<div class="col-sm-6">
+	  			<div class="panel panel-default"width="300" length="300">
+  					<div class="panel-body text-center">
+						<h3>Rejoignez vos amis et partez à la conquête du monde</h3>
+						<br/>
+						<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" alt-"logo" width="500" length="500">
+		  			</div>
 				</div>
 			</div>
 		</div>
 	</div>
-    </font>
     <br/>
-    <br/>
+        <br/>
+
+   
+
+        <div class="row">
+  		<div class="column">
+  			  <img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		</div>
+  		<div class="column">
+    			<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    			<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    			<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+  		<span class="close cursor" onclick="closeModal()">&times;</span>
+  			<div class="modal-content">
+
+    				<div class="mySlides">
+      					<div class="numbertext">1 / 4</div>
+      					<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%">
+    				</div>
+
+    				<div class="mySlides">
+      					<div class="numbertext">2 / 4</div>
+	      				<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%">
+    				</div>
+
+    				<div class="mySlides">
+      					<div class="numbertext">3 / 4</div>
+      					<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%">
+    				</div>
     
-    	<div class=well><div class="container-fluid bg-2 text-center">
-		<h2>Création du groupe</h2>
-		<h4>Notre groupe s'est formé par affinité puisque nous étions tous les quatre dans la même classe. Après avoir longuement discuté, 
-			nous avons remarqué que nous avions une vision similaire du projet et que nous souhaitions mettre en œuvre ce projet ensemble. 
-			Nous avons décidé de nommer notre équipe REST'art, "REST" étant la première lettre de chacun de nos prénoms, "art" représentant l'art du design et du développement de jeux vidéos.
-			Enfin, le tout "REST'art" signifiant "restart" en référence à ce bouton emblématique des jeux vidéos quand le joueur désire recommencer une partie. 
-			Cela met également en avant le fait que nos jeux seront donc jouables plusieurs fois sans jamais se lasser, bien au contraire,
-			recommencer une partie permet au joueur de s'améliorer et d'établir une stratégie contre ses adversaires et développant ainsi un aspect compétitif.</h4>
-	     </div>
-    		</div>
+    				<div class="mySlides">
+      					<div class="numbertext">4 / 4</div>
+      					<img src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%">
+    				</div>
     
-    </body>
+   			 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   			 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    			<div class="caption-container">
+      				<p id="caption"></p>
+    			</div>
+
+
+    			<div class="column">
+      				<img class="demo cursor" src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="currentSlide(1)" alt="tonserpent">
+    			</div>
+    			<div class="column">
+     				<img class="demo cursor" src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="currentSlide(2)" alt="tonchien">
+   			</div>
+    			<div class="column">
+     				<img class="demo cursor" src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="currentSlide(3)" alt="tasoeur">
+    			</div>
+    			<div class="column">
+      				<img class="demo cursor" src="http://www.co-optimus.com/images/upload/image/reviews/Destiny2/Destiny2_CoOpReview_Screen4.jpg" style="width:100%" onclick="currentSlide(4)" alt="tamere">
+    			</div>
+  		</div>
+	</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br/>
+        <br/>
+
+      
+	</body>
     	<footer class="container-fluid  bg-primary container-dark-fixed-bottom text-center ">
   		<p><h3>Meteor's Last Whisper</h3> by REST'art
 	</footer>
